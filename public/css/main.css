@@ -393,13 +393,13 @@
     margin-top: 9rem;
     margin-bottom: 1rem; }
   .landing-description {
-    margin-top: 1rem; }
+    margin-top: 2rem; }
   .link-container .link-label, .link-container a {
     font-size: 0.9rem; } }
 
 @media (max-width: 600px) {
   .greeting-container {
-    margin-top: 9rem; } }
+    margin-top: 6rem; } }
 
 /* Header and footer styling */
 .footer-container {

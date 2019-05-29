@@ -99,22 +99,22 @@
         height: 2px;
         top: 50%;
         margin-top: -0.5px;
-        background: #474747;
+        background: white;
     }
 
     span:before {
-        left: -3px;
+        left: -1px;
     }
 
     span:after {
-        right: 0;
-        background: #474747;
+        right: 3px;
+        background: white;
         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
     span:hover:before {
-        background: #474747;
-        width: 107%;
+        background: white;
+        width: 100%;
         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
@@ -134,13 +134,18 @@
           font-size: 2rem;
       }*/
   }
+
+  .notActive {
+
+    span:before, span:after {
+        height: 1px;
+    }
+  }
 }
 
-@media(max-width: 1280px){
+@media(max-width: 1200px){
 
-  .header-container {
-      //margin: 0 6rem;
-  }
+
 }
 
 @media(max-width: 1024px){

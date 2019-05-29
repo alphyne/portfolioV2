@@ -306,26 +306,31 @@
     font-family: 'nexa_boldregular';
     /*font-weight: 600;*/
     font-size: 4.4rem;
-    color: black;
-    line-height: 4rem; }
+    letter-spacing: 2px;
+    color: white;
+    line-height: 4rem;
+    /*a:hover {
+            color: #876abb;
+            border-bottom-color: white;
+            transition-duration: 0.5s;
+
+        }*/ }
     .landing-container h1 a {
       text-decoration: none;
-      color: black;
-      border-bottom: 2px solid #313131; }
-    .landing-container h1 a:hover {
-      color: #707070;
-      border-bottom-color: #707070;
-      transition-duration: 0.5s; }
+      color: white;
+      /*border-bottom: 2px solid #313131;*/ }
   .landing-container h2 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 3 00;
     font-size: 1.6rem;
-    color: #707070; }
+    letter-spacing: 2px;
+    color: white; }
   .landing-container p {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 1.6rem;
-    color: #505050;
+    letter-spacing: 2px;
+    color: white;
     line-height: 1.7; }
 
 .greeting-container {
@@ -336,8 +341,27 @@
   margin-left: 36vw;
   margin-top: 2rem; }
   .landing-description a {
-    text-decoration: none;
-    color: #45af6e; }
+    text-decoration: underline;
+    color: white; }
+  .landing-description a:hover {
+    color: #876abb; }
+
+.link-container {
+  margin: 6rem 0;
+  line-height: 2rem; }
+  .link-container .link-label {
+    font-family: 'nexa_boldregular';
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    color: white; }
+  .link-container a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none; }
+  .link-container .under-construction {
+    text-decoration: line-through; }
 
 @media (max-width: 1600px) {
   .landing-container {
@@ -345,8 +369,12 @@
     margin-left: 9rem; }
     .landing-container h1 {
       font-size: 3.6rem; }
+    .landing-container h2, .landing-container p {
+      font-size: 1.4rem; }
   .landing-description {
-    margin-left: 36vw; } }
+    margin-left: 36vw; }
+  .link-container .link-label, .link-container a {
+    font-size: 1.1rem; } }
 
 @media (max-width: 1200px) {
   .landing-description {
@@ -354,32 +382,24 @@
 
 @media (max-width: 840px) {
   .landing-container {
-    margin-left: 3rem;
-    margin-right: 3rem; }
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; }
     .landing-container h1 a {
+      font-size: 3rem;
       border-bottom: 0; }
+    .landing-container h2, .landing-container p {
+      font-size: 1rem; }
   .greeting-container {
-    margin-top: 9rem; } }
+    margin-top: 9rem;
+    margin-bottom: 1rem; }
+  .landing-description {
+    margin-top: 1rem; }
+  .link-container .link-label, .link-container a {
+    font-size: 0.9rem; } }
 
 @media (max-width: 600px) {
   .greeting-container {
-    margin-top: 6rem; } }
-
-.link-container {
-  margin: 4rem 0;
-  line-height: 2rem; }
-  .link-container .link-label {
-    font-family: 'nexa_boldregular';
-    font-size: 1.3rem;
-    color: #313131; }
-  .link-container a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    color: #707070;
-    font-size: 1.3rem;
-    text-decoration: none; }
-  .link-container .under-construction {
-    text-decoration: line-through; }
+    margin-top: 9rem; } }
 
 /* Header and footer styling */
 .footer-container {
@@ -495,19 +515,19 @@
   height: 2px;
   top: 50%;
   margin-top: -0.5px;
-  background: #474747; }
+  background: white; }
 
 .notActive span:before {
-  left: -3px; }
+  left: -1px; }
 
 .notActive span:after {
-  right: 0;
-  background: #474747;
+  right: 3px;
+  background: white;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
 .notActive span:hover:before {
-  background: #474747;
-  width: 107%;
+  background: white;
+  width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
 .notActive span:hover:after {
@@ -520,7 +540,9 @@
     margin: 0 14vw;
     /*h1 {
           font-size: 2rem;
-      }*/ } }
+      }*/ }
+  .notActive span:before, .notActive span:after {
+    height: 1px; } }
 
 @media (max-width: 1024px) {
   .header-container {
@@ -760,7 +782,7 @@ body {
   }
 }*/
 body {
-  background-color: #fbfbfb; }
+  background-color: black; }
 
 .page-container {
   margin: 0 20vw; }

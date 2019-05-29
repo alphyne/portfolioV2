@@ -338,7 +338,7 @@
   margin-bottom: 2rem; }
 
 .landing-description {
-  margin-left: 36vw;
+  margin-left: 38vw;
   margin-top: 2rem; }
   .landing-description a {
     text-decoration: underline;
@@ -373,13 +373,13 @@
     .landing-container h2, .landing-container p {
       font-size: 1.4rem; }
   .landing-description {
-    margin-left: 36vw; }
+    margin-left: 40vw; }
   .link-container .link-label, .link-container a {
     font-size: 1.1rem; } }
 
 @media (max-width: 1200px) {
   .landing-description {
-    margin-left: 0; } }
+    margin-left: 0rem; } }
 
 @media (max-width: 840px) {
   .landing-container {
